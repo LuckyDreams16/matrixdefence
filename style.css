@@ -97,3 +97,33 @@ footer {
     background-color: #222;
     color: #ccc;
 }
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.insta-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E4405F; /* Instagram-röd färg */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.insta-btn:hover {
+    background-color: #c13584; /* Instagram-lila */
+    transform: scale(1.1);
+}
+
+.insta-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
