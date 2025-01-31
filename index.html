@@ -1,94 +1,36 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
+<head><link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatrixDefence</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #f4f4f4;
-            line-height: 1.6;
-        }
-        header {
-            background: #000;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #ff0000;
-        }
-        header h1 {
-            color: #ff0000;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-        }
-        nav a {
-            color: #ff0000;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #262626;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-        }
-        section h2 {
-            color: #ff0000;
-        }
-        footer {
-            background: #000;
-            text-align: center;
-            padding: 10px;
-            color: #999;
-            font-size: 0.9rem;
-            border-top: 3px solid #ff0000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <h1>MatrixDefence</h1>
-        <p>Säkerhet och Förberedelse</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">Om Oss</a>
-        <a href="#resources">Resurser</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
+
+    <section id="home" class="hero">
+        <h2>Välkommen till MatrixDefence</h2>
+        <p>Din guide till säkerhet och förberedelse.</p>
+        <button onclick="alert('Välkommen!')">Läs Mer</button>
+    </section>
+
     <section id="about">
         <h2>Om Oss</h2>
-        <p>
-            MatrixDefence är din guide till säkerhet och förberedelse i en föränderlig värld. 
-            Vi erbjuder strategier, kunskap och verktyg för att hjälpa dig skydda det som betyder mest.
-        </p>
+        <p>MatrixDefence är din pålitliga källa för information om cybersäkerhet och överlevnad.</p>
+        <img src="tigersköld.webp" alt="Tiger Shield" class="tiger-img">
     </section>
-    <section id="resources">
-        <h2>Resurser</h2>
-        <p>
-            Utforska våra guider och artiklar om överlevnad, cybersäkerhet, och riskhantering.  
-            Kom tillbaka ofta för att hitta uppdaterad information.
-        </p>
-    </section>
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>
-            Har du frågor eller vill veta mer? Kontakta oss via e-post på <strong>kontakt@matrixdefence.se</strong>.
-        </p>
-    </section>
+
     <footer>
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
