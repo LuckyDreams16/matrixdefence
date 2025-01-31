@@ -13,3 +13,4 @@ Här hittar du information om cybersäkerhet, överlevnadsstrategier och hur du 
 ---
 *Byggd med GitHub Pages av [LuckyDreams16](https://github.com/LuckyDreams16)*  
 ![MatrixDefence Tiger Shield](https://raw.githubusercontent.com/LuckyDreams16/matrixdefence/refs/heads/main1/tigersk%C3%B6ld.webp)
+alt="MatrixDefence Tiger Shield" width="400">
