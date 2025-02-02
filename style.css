@@ -80,7 +80,7 @@ body {
 #about .tiger-img {
     display: block;  /* Gör så att bilden beter sig som ett block */
     margin: 0 auto;  /* Centrera horisontellt */
-    width: 300px;  /* Justera storlek om det behövs */
+    width: 200px;  /* Justera storlek om det behövs */
 }
 
 }
