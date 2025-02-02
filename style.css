@@ -30,7 +30,7 @@ body {
 }
 
 .navbar ul li a {
-    color:#FFA500
+    color: #FFA500;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
