@@ -83,8 +83,6 @@ body {
     width: 200px;  /* Justera storlek om det behövs */
 }
 
-}
-
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
