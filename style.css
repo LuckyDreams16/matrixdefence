@@ -30,7 +30,7 @@ body {
 }
 
 .navbar ul li a {
-    color: orange
+    color:#FFA500
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
@@ -55,7 +55,7 @@ body {
 
 .hero button {
     background-color: #f39c12;
-    color: white;
+    color: #FFA500;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
