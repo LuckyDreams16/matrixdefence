@@ -54,8 +54,9 @@ body {
 }
 
 .hero button {
-    background-color: #f39c12;
-    color: #white;
+    background-color: #f39c12; /* Orange bakgrund */
+    color: black; /* Ändrar textfärgen till svart */
+    font-weight: bold; /* Gör texten fet */
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -65,9 +66,10 @@ body {
 }
 
 .hero button:hover {
-    transform: scale(1.1);
-    background-color: #e67e22;
+    background-color: #e67e22; /* Mörkare orange vid hover */
+    color: white; /* Ändrar texten till vit vid hover */
 }
+
 
 /* Om Oss-sektion */
 #about {
