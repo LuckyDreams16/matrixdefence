@@ -78,11 +78,10 @@ body {
 }
 
 #about .tiger-img {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 100px; /* Justera storlek */
-    display: inline-block;
 }
 
 }
