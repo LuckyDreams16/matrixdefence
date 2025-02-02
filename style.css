@@ -84,8 +84,6 @@ body {
     width: 100px; /* Justera storlek */
 }
 
-}
-
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
