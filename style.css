@@ -78,9 +78,11 @@ body {
 }
 
 #about .tiger-img {
-    width: 300px;
-    margin-top: 20px;
-    animation: bounce 2s infinite;
+    display: block;  /* Gör så att bilden beter sig som ett block */
+    margin: 0 auto;  /* Centrera horisontellt */
+    width: 300px;  /* Justera storlek om det behövs */
+}
+
 }
 
 @keyframes bounce {
