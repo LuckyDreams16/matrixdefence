@@ -77,7 +77,7 @@ body {
     text-align: center;
 }
 
-#about .tiger-img {
+.tiger-img {
     display: inline-block;
     width: 100px; /* Justera storlek */
 }
