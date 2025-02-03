@@ -79,7 +79,7 @@ body {
 
 .tiger-img {
     display: inline-block;
-    width: 100px; /* Justera storlek */
+    width: 250px; /* Justera storlek */
 }
 
 @keyframes bounce {
