@@ -105,10 +105,14 @@ footer {
     color: #ccc;
 }
 #contact {
-    text-align: center;
+    width: 80%; /* Ändra detta värde för att göra den bredare */
+    max-width: 900px; /* Öka maxbredden om du vill ha mer utrymme */
+    margin: 0 auto; /* Ser till att den hålls centrerad */
     padding: 50px 20px;
-    background-color: #222;
+    background-color: #222; /* Behåller den mörka bakgrunden */
     color: #FF5733;
+    border-radius: 10px; /* Ger rundade hörn, valfritt */
+}
 }
 
 .insta-btn {
