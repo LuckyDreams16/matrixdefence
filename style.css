@@ -95,7 +95,40 @@ body {
     50% {
         transform: translateY(-20px);
     }
+}#produkter {
+    text-align: center;
+    padding: 50px 20px;
+    color: #FF5733;
 }
+
+.product {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background: #e67e22;
+}
+
 
 /* Footer */
 footer {
