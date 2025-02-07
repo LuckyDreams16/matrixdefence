@@ -78,6 +78,14 @@ body {
     align-items: center; /* Centrerar allt innehåll i sektionen */
     padding: 50px 20px;
 }
+#about {
+    display: none; /* Döljer sektionen som standard */
+}
+
+/* Visa "Om Oss" bara på index.html */
+body#index-page #about {
+    display: block;
+}
 
 .tiger-img {
     display: block;
