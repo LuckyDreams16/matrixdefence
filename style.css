@@ -189,6 +189,11 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
 
     .nav-links {
@@ -198,17 +203,24 @@ footer {
         background: black;
         width: 100%;
         left: 0;
-        top: 50px;
+        top: 60px;
         text-align: center;
+        padding: 10px 0;
     }
 
     .nav-links.active {
-        display: flex; /* När .active läggs till via JS */
+        display: flex;
     }
 
     .nav-links li {
-        padding: 10px;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
     }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+}
 
 img {
     max-width: 100%;
