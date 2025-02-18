@@ -175,8 +175,23 @@ footer {
     height: 30px;
     margin-right: 10px;
 }
+/* Döljer menyn på större skärmar */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Mobilanpassning */
 @media (max-width: 768px) {
-    .navbar ul {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -187,15 +202,12 @@ footer {
         text-align: center;
     }
 
-    .navbar.active ul {
-        display: flex;
+    .nav-links.active {
+        display: flex; /* När .active läggs till via JS */
     }
 
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        color: white;
-        font-size: 24px;
+    .nav-links li {
+        padding: 10px;
     }
 
 img {
