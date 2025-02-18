@@ -40,9 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.getElementById("mobile-menu");
     const navLinks = document.querySelector(".nav-links");
 
-    mobileMenu.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-    });
+    if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    } else {
+        console.error("Element saknas! Kontrollera att id=mobile-menu och class=nav-links finns i HTML.");
+    }
 });
 </script>
 
