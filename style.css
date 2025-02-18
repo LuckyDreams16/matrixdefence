@@ -171,6 +171,29 @@ footer {
     background-color: #c13584; /* Instagram-red */
     transform: scale(1.1);
 }
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        text-align: center;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+}
 
 .insta-logo {
     width: 30px;
