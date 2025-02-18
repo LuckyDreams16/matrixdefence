@@ -170,6 +170,10 @@ footer {
 .insta-btn:hover {
     background-color: #c13584; /* Instagram-red */
     transform: scale(1.1);
+}.insta-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 @media (max-width: 768px) {
     .navbar ul {
@@ -193,13 +197,7 @@ footer {
         color: white;
         font-size: 24px;
     }
-}
 
-.insta-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
 img {
     max-width: 100%;
     height: auto;
