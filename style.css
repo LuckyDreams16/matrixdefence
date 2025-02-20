@@ -15,7 +15,6 @@ body {
     background-color: #222;
     padding: 10px 20px;
     position: relative;
-    top: 0;
 }
 .navbar h1 {
     color: #f39c12;
@@ -182,7 +181,6 @@ footer {
     position: absolute;
     top: 15px;
     right: 20px;
-    z-index: 100;
 }
 
 /* Mobilanpassning */
