@@ -9,15 +9,15 @@
 <body id="index-page">
 
    <header class="navbar"> 
-    <h1>MatrixDefence</h1> 
-    <div class="menu-toggle" id="mobile-menu">☰</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="products.html">Produkter</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-        <li><a href="about.html">Om Oss</a></li> 
-    </ul>
-</header>
+       <h1>MatrixDefence</h1> 
+       <div class="menu-toggle" id="mobile-menu">☰</div>
+       <ul class="nav-links">
+           <li><a href="index.html">Hem</a></li>
+           <li><a href="products.html">Produkter</a></li>
+           <li><a href="contact.html">Kontakt</a></li>
+           <li><a href="about.html">Om Oss</a></li> 
+       </ul>
+   </header>
 
     <section id="home" class="hero">
         <h2>Välkommen till MatrixDefence</h2>
@@ -35,23 +35,9 @@
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
     
-<script src="script.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.querySelector(".nav-links");
-
-    if (mobileMenu && navLinks) {
-        mobileMenu.addEventListener("click", function () {
-            navLinks.classList.toggle("active"); // Växlar meny vid klick
-        });
-    } else {
-        console.error("Element saknas! Kontrollera HTML.");
-    }
-});
-</script>
-</body>
-</html>
+    <!-- Endast en script-fil -->
+    <script src="script.js"></script>
 
 </body>
 </html>
+
