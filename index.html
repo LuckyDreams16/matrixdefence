@@ -35,6 +35,7 @@
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
     
+<script src="script.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.getElementById("mobile-menu");
@@ -42,13 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (mobileMenu && navLinks) {
         mobileMenu.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
+            navLinks.classList.toggle("active"); // Växlar meny vid klick
         });
     } else {
-        console.error("Element saknas! Kontrollera att id=mobile-menu och class=nav-links finns i HTML.");
+        console.error("Element saknas! Kontrollera HTML.");
     }
 });
-<script src="script.js"></script>
+</script>
+</body>
+</html>
 
 </body>
 </html>
