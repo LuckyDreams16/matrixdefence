@@ -184,9 +184,10 @@ footer {
 }
 
 /* Mobilanpassning */
-@media (max-width: 768px) 
-{.menu-toggle {
-        display: block;
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
     .nav-links {
         display: none; /* Döljer menyn från början */
         flex-direction: column;
