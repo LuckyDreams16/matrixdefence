@@ -175,7 +175,7 @@ footer {
 }
 /* Döljer menyn på större skärmar */
 .menu-toggle {
-    display: none;
+    display:none;
     font-size: 30px;
     cursor: pointer;
     position: absolute;
