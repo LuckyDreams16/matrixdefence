@@ -185,9 +185,6 @@ footer {
 
 /* Mobilanpassning */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; 
-    }
     .nav-links {
         display: none; /* Döljer menyn från början */
         flex-direction: column;
@@ -201,7 +198,11 @@ footer {
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Visar menyn när 'active' läggs till */
+    }
+
+    .menu-toggle {
+        display: block; /* Säkerställer att hamburgarmenyn syns */
     }
 
     .nav-links li {
