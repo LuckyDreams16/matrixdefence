@@ -218,3 +218,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+.vpn-btn {
+    display: inline-block;
+    background-color: #0072ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.vpn-btn:hover {
+    background-color: #0056b3;
+}
