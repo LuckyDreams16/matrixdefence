@@ -8,13 +8,12 @@ body {
 }
 
 /* Navigationsmeny */
-.navbar {
-   display: flex;
+ display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Mörk bakgrund */
     padding: 15px 60px; /* Ger bättre marginaler */
-    border-bottom: 2px solid #f39c12; /* Lyxig touch 
+    border-bottom: 2px solid #f39c12; /* Lyxig touch */
 }
 .navbar h1 {
    color: #f39c12;
@@ -24,11 +23,13 @@ body {
 }
 
 .navbar ul {
-    list-style: none;
+   list-style: none;
     display: flex;
-    gap: 50px; /* Mer avstånd mellan alternativen */
+    justify-content: center; /* Centrerar menyn */
+    align-items: center;
+    gap: 30px; /* Avstånd mellan alternativen */
     padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Gör så att menyn centreras i mitten */
 }
 /* Menyobjekt */
 .navbar ul li {
