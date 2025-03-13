@@ -9,33 +9,41 @@ body {
 
 /* Navigationsmeny */
 .navbar {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111; /* Mörk bakgrund för en lyxig känsla */
-    padding: 15px 40px;
-    position: relative;
-    border-bottom: 2px solid #f39c12; /* Subtil linje för en premiumlook */
+    background-color: #111; /* Mörk bakgrund */
+    padding: 20px 60px; /* Ger bättre marginaler */
+    border-bottom: 2px solid #f39c12; /* Lyxig touch 
 }
 .navbar h1 {
-    color: #f39c12;
+   color: #f39c12;
     font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .navbar ul {
     list-style: none;
-    gap: 20px;
+    display: flex;
+    gap: 50px; /* Mer avstånd mellan alternativen */
+    padding: 0;
+    margin: 0;
 }
 
 .navbar ul li a {
-    color: #FFA500;
+  color: #f0f0f0;
     text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #f39c12;
+    color: black;
+    background: #f39c12;
+    border-radius: 5px;
 }
 
 /* Hero-sektion */
