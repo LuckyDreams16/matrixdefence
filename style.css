@@ -12,9 +12,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
-    padding: 10px 20px;
+    background-color: #111; /* Mörk bakgrund för en lyxig känsla */
+    padding: 15px 40px;
     position: relative;
+    border-bottom: 2px solid #f39c12; /* Subtil linje för en premiumlook */
 }
 .navbar h1 {
     color: #f39c12;
