@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Mörk bakgrund */
-    padding: 20px 60px; /* Ger bättre marginaler */
+    padding: 15px 60px; /* Ger bättre marginaler */
     border-bottom: 2px solid #f39c12; /* Lyxig touch 
 }
 .navbar h1 {
@@ -30,7 +30,10 @@ body {
     padding: 0;
     margin: 0;
 }
-
+/* Menyobjekt */
+.navbar ul li {
+    display: inline-block;
+}
 .navbar ul li a {
   color: #f0f0f0;
     text-decoration: none;
