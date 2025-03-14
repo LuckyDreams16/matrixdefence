@@ -8,7 +8,7 @@ body {
 }
 
 /* Navigationsmeny */
- display:none;
+ display: none;
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Mörk bakgrund */
