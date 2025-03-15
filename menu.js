@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".navbar ul");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", function() {
-        navMenu.classList.toggle("active"); // Växlar synlighet
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
     });
 });
