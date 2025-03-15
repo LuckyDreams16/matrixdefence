@@ -15,17 +15,18 @@ body {
     background-color: #111; /* Mörk bakgrund */
     padding: 15px 60px; /* Ger bättre marginaler */
     border-bottom: 2px solid #f39c12; /* Lyxig touch */
+    position: relative; /* För att positionera hamburgarmeny korrekt */
 }
 
 .navbar h1 {
-   color: #f39c12;
+    color: #f39c12;
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .navbar ul {
-   list-style: none;
+    list-style: none;
     display: flex;
     justify-content: center; /* Centrerar menyn */
     align-items: center;
@@ -33,12 +34,14 @@ body {
     padding: 0;
     margin: 0 auto; /* Gör så att menyn centreras i mitten */
 }
+
 /* Menyobjekt */
 .navbar ul li {
     display: inline-block;
 }
+
 .navbar ul li a {
-  color: #f0f0f0;
+    color: #f0f0f0;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
@@ -50,6 +53,14 @@ body {
     color: black;
     background: #f39c12;
     border-radius: 5px;
+}
+
+/* Hamburgarmeny */
+.menu-toggle {
+    display: none; /* Dölj hamburgerikonen som standard */
+    font-size: 30px;
+    cursor: pointer;
+    color: #f39c12;
 }
 
 /* Hero-sektion */
@@ -82,7 +93,6 @@ body {
     color: white; /* Ändrar texten till vit vid hover */
 }
 
-
 /* Om Oss-sektion */
 #about {
     display: flex;
@@ -90,6 +100,7 @@ body {
     align-items: center; /* Centrerar allt innehåll i sektionen */
     padding: 50px 20px;
 }
+
 #about {
     display: none; /* Döljer sektionen som standard */
 }
@@ -106,16 +117,8 @@ body#index-page #about {
     width: 600px;
 }
 
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}#produkter {
+/* Produktsektion */
+#produkter {
     text-align: center;
     padding: 50px 20px;
     color: #FF5733;
@@ -149,7 +152,6 @@ body#index-page #about {
     background: #e67e22;
 }
 
-
 /* Footer */
 footer {
     text-align: center;
@@ -157,6 +159,8 @@ footer {
     background-color: #222;
     color: #ccc;
 }
+
+/* Kontaktsektion */
 #contact {
     width: 80%; /* Ändra detta värde för att göra den bredare */
     max-width: 900px; /* Öka maxbredden om du vill ha mer utrymme */
@@ -166,6 +170,8 @@ footer {
     color: #FF5733;
     border-radius: 10px; /* Ger rundade hörn, valfritt */
 }
+
+/* Instagram-knapp */
 .insta-btn {
     display: inline-flex;
     align-items: center;
@@ -182,72 +188,14 @@ footer {
 .insta-btn:hover {
     background-color: #c13584; /* Instagram-red */
     transform: scale(1.1);
-}.insta-logo {
+}
+
+.insta-logo {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.hamburger {
-    display: none; /* Dölj hamburgerikonen som standard */
-    font-size: 24px;
-    cursor: pointer;
-}
-/* Döljer menyn på större skärmar */
-.menu-toggle {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 1000; /* Se till att den ligger ovanför allt annat */
-}
 
-/* Mobilanpassning */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Visa hamburgerikonen */
-    }
-    .nav-links {
-        display: none; /* Döljer menyn från början */
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        width: 100%;
-        left: 0;
-        top: 60px;
-        text-align: center;
-        padding: 10px 0;
-    }
-.nav-links.active {
-        display: flex; /* Visar menyn när 'active' läggs till */
-    }
-    
-.menu {
-        display: none; /* Dölj menyn */
-        flex-direction: column; /* Visa menyn vertikalt när den är aktiv */
-    }
-
-.menu.active {
-        display: flex; /* Visa menyn när den är aktiv */
-    }
-    .nav-links li {
-        padding: 15px 0;
-        border-bottom: 1px solid #333;
-    }
-
-    .nav-links li:last-child {
-        border-bottom: none;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 /* NordVPN Sektion */
 .nordvpn-container {
     max-width: 800px;
@@ -318,4 +266,42 @@ img {
     font-size: 1em;
     font-style: italic;
     color: #aaaaaa;
+}
+
+/* Mobilanpassning */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Visa hamburgerikonen på mobil */
+    }
+
+    .navbar ul {
+        display: none; /* Dölj menyn som standard på mobil */
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        position: absolute;
+        top: 100%; /* Placera menyn under navbaren */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex; /* Visa menyn när den är aktiv */
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .navbar ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Bildstilar */
+img {
+    max-width: 100%;
+    height: auto;
 }
