@@ -8,13 +8,15 @@ body {
 }
 
 /* Navigationsmeny */
- display: none;
+.navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Mörk bakgrund */
     padding: 15px 60px; /* Ger bättre marginaler */
     border-bottom: 2px solid #f39c12; /* Lyxig touch */
 }
+
 .navbar h1 {
    color: #f39c12;
     font-size: 1.8em;
@@ -193,6 +195,7 @@ footer {
     position: absolute;
     top: 15px;
     right: 20px;
+    z-index: 1000; /* Se till att den ligger ovanför allt annat */
 }
 
 /* Mobilanpassning */
