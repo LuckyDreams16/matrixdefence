@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Element saknas! Kontrollera HTML.");
     }
 });
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Lägg till eller ta bort klassen "active"
+});
