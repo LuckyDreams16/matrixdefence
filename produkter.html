@@ -6,40 +6,44 @@
     <title>Produkter - MatrixDefence</title>
     <link rel="stylesheet" href="style.css"> <!-- Länkar till din CSS-fil -->
 </head>
-<body>
-    <nav class="navbar">
+<body id="products-page"> <!-- Lägg till ett ID för att specifikt styla produktsidan -->
+    <header class="navbar"> <!-- Ändra <nav> till <header> för att matcha din CSS -->
         <h1>MatrixDefence</h1>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">☰</div> <!-- Lägg till hamburgarmeny -->
+        <ul class="nav-links" id="nav-links"> <!-- Lägg till klasser för att matcha CSS -->
             <li><a href="index.html">Hem</a></li>
             <li><a href="produkter.html">Produkter</a></li>
             <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html">Om Oss</a></li> <!-- Lägg till Om Oss-länk om den finns -->
+            <li><a href="nordvpn.html">NordVPN</a></li> <!-- Lägg till NordVPN-länk om den finns -->
         </ul>
-    </nav>
+    </header>
 
     <section id="produkter">
         <h2>Våra produkter</h2>
-        <div class="product-grid">
         <p>Här hittar du våra bästa produkter för säkerhet och beredskap.</p>
 
-        <div class="product">
-            <img src="produkt1.jpg" alt="Produkt 1">
-            <h3>Produkt 1</h3>
-            <p>Beskrivning av produkten.</p>
-            <button>Köp nu</button>
-        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/produkt1.jpg" alt="Produkt 1"> <!-- Uppdatera sökvägen till bilden -->
+                <h3>Produkt 1</h3>
+                <p>Beskrivning av produkten.</p>
+                <button class="btn">Köp nu</button> <!-- Lägg till klassen "btn" för styling -->
+            </div>
 
-        <div class="product">
-            <img src="produkt2.jpg" alt="Produkt 2">
-            <h3>Produkt 2</h3>
-            <p>Beskrivning av produkten.</p>
-            <button>Köp nu</button>
-        </div>
-
+            <div class="product">
+                <img src="images/produkt2.jpg" alt="Produkt 2"> <!-- Uppdatera sökvägen till bilden -->
+                <h3>Produkt 2</h3>
+                <p>Beskrivning av produkten.</p>
+                <button class="btn">Köp nu</button> <!-- Lägg till klassen "btn" för styling -->
+            </div>
+        </div> <!-- Stäng product-grid-div -->
     </section>
 
     <footer>
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Länkar till din JavaScript-fil -->
 </body>
 </html>
