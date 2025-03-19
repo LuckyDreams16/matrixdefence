@@ -99,22 +99,22 @@ body {
     flex-direction: column;
     align-items: center; /* Centrerar allt innehåll i sektionen */
     padding: 50px 20px;
+    display: none; /* Döljer sektionen som standard */
 }
+
+/* Om Oss-text */
 .about-text {
     color: #d3d3d3;  /* Ljusgrå text för bättre kontrast */
     font-size: 18px;
     line-height: 1.6;  /* Ökar radavståndet */
     text-align: justify;
-    max-width: 800px;  /* Gör texten smalare för bättre läsbarhet */
+    max-width: 800px;  /* Begränsar bredden för bättre läsbarhet */
     margin: 0 auto;  /* Centrerar texten */
-}
-#about {
-    display: none; /* Döljer sektionen som standard */
 }
 
 /* Visa "Om Oss" bara på index.html */
 body#index-page #about {
-    display: block;
+    display: flex;
 }
 
 .tiger-img {
