@@ -6,6 +6,9 @@ body {
     color: #FF5733;
     line-height: 1.6;
 }
+.header {
+    background-color: black;
+}
 
 /* Navigationsmeny */
 .navbar {
