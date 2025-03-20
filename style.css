@@ -350,6 +350,3 @@ img {
     display: block;
     margin: 0 auto; /* Centrerar loggan */
 }
-.logo {
-    mix-blend-mode: multiply;
-}
