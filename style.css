@@ -338,3 +338,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+.old-text {
+    display: none;
+}
+.logo {
+    max-width: 200px; /* Ändra storleken efter behov */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrerar loggan */
+}
