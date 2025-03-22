@@ -4,80 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter - MatrixDefence</title>
-    <link rel="stylesheet" href="style.css"> <!-- Länkar till din CSS-fil -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="products-page"> <!-- Lägg till ett ID för att specifikt styla produktsidan -->
-    <header class="navbar"> <!-- Ändra <nav> till <header> för att matcha din CSS -->
+<body id="products-page">
+
+    <header class="navbar">
         <h1>MatrixDefence</h1>
-        <div class="menu-toggle" id="mobile-menu">☰</div> <!-- Lägg till hamburgarmeny -->
-        <ul class="nav-links" id="nav-links"> <!-- Lägg till klasser för att matcha CSS -->
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Hem</a></li>
             <li><a href="produkter.html">Produkter</a></li>
             <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="about.html">Om Oss</a></li> <!-- Lägg till Om Oss-länk om den finns -->
-            <li><a href="nordvpn.html">NordVPN</a></li> <!-- Lägg till NordVPN-länk om den finns -->
+            <li><a href="about.html">Om Oss</a></li>
+            <li><a href="nordvpn.html">NordVPN</a></li>
         </ul>
     </header>
 
-    <section id="produkter">
-        <h2>Våra produkter</h2>
-        <p>Här hittar du våra bästa produkter för säkerhet och beredskap.</p>
+    <section id="affiliate-powerbanks" style="background-color:#0d0d0d; padding:2rem; color:white;">
+        <h2 style="text-align:center; font-size:2rem; margin-bottom:2rem;">Rekommenderade Powerbanks</h2>
 
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/produkt1.jpg" alt="Produkt 1"> <!-- Uppdatera sökvägen till bilden -->
-                <h3>Produkt 1</h3>
-                <p>Beskrivning av produkten.</p>
-                <button class="btn">Köp nu</button> <!-- Lägg till klassen "btn" för styling -->
+        <div style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;">
+
+            <!-- Powerbank 1 -->
+            <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
+                <img src="https://m.media-amazon.com/images/I/61sjMaKQmjL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Powerbank 1" style="width:100%; border-radius:0.5rem;">
+                <h3 style="margin:1rem 0 0.5rem;">Power Bank 26 800 mAh, USB C med kabel 25 W PD+QC4.0</h3>
+                <p style="font-size:0.9rem;">Snabbladdning, LED-display. Kompatibel med Android & iPhone.</p>
+                <a href="https://amzn.to/4hB0iIx" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
             </div>
 
-            <div class="product">
-                <img src="images/produkt2.jpg" alt="Produkt 2"> <!-- Uppdatera sökvägen till bilden -->
-                <h3>Produkt 2</h3>
-                <p>Beskrivning av produkten.</p>
-                <button class="btn">Köp nu</button> <!-- Lägg till klassen "btn" för styling -->
+            <!-- Powerbank 2 -->
+            <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
+                <img src="https://m.media-amazon.com/images/I/51Ry8y4sTjL._AC_SY741_.jpg" alt="Powerbank 2" style="width:100%; border-radius:0.5rem;">
+                <h3 style="margin:1rem 0 0.5rem;">UGREEN Nexode 30W USB C-laddare USB C Power Bank GaN II</h3>
+                <p style="font-size:0.9rem;">Snabbladdning, resor, låg vikt och tålig. Perfekt för camping & krisberedskap.</p>
+                <a href="https://amzn.to/4iPj3ZN" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
             </div>
-        </div> <!-- Stäng product-grid-div -->
+
+            <!-- Powerbank 3 -->
+            <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
+                <img src="https://m.media-amazon.com/images/I/71cV3GxsAbL._AC_SX569_.jpg" alt="Powerbank 3" style="width:75%; border-radius:0.5rem;">
+                <h3 style="margin:1rem 0 0.5rem;">INIU Power Bank, 22,5 W 10 000 mAh</h3>
+                <p style="font-size:0.9rem;">Lätt och kompakt powerbank med ficklampa. Kompatibel med iPhone och Samsung.</p>
+                <a href="https://amzn.to/4hzN3b1" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
+            </div>
+
+        </div>
     </section>
-    
-   <section id="affiliate-powerbanks" style="background-color:#0d0d0d; padding:2rem; color:white;">
-  <h2 style="text-align:center; font-size:2rem; margin-bottom:2rem;">Rekommenderade Powerbanks</h2>
-
-  <div style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;">
-
-    <!-- Powerbank 1 -->
-    <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
-      <img src="https://m.media-amazon.com/images/I/61sjMaKQmjL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Powerbank 1" style="width:100%; border-radius:0.5rem;">
-      <h3 style="margin:1rem 0 0.5rem;">Power Bank 26 800 mAh,USB C med kabel 25 W PD+QC4.0</h3>
-      <p style="font-size:0.9rem;">Snabbladdning, LED-display. Kompatibel med Android & iPhone.</p>
-      <a href="https://amzn.to/4hB0iIx" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
-    </div>
-
-    <!-- Powerbank 2 -->
-    <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
-      <img src="https://m.media-amazon.com/images/I/51Ry8y4sTjL._AC_SY741_.jpg" alt="Powerbank 2" style="width:100%; border-radius:0.5rem;">
-      <h3 style="margin:1rem 0 0.5rem;">UGREEN Nexode 30W USB C-laddare USB C Power Bank GaN II </h3>
-      <p style="font-size:0.9rem;">Snabbladdning, resor, låg vikt och tålig. Perfekt för camping & krisberedskap.</p>
-      <a href="https://amzn.to/4iPj3ZN" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
-    </div>
-
-    <!-- Powerbank 3 -->
-    <div style="background:#1a1a1a; padding:1rem; border-radius:1rem; width:300px; text-align:center;">
-      <img src="https://m.media-amazon.com/images/I/71cV3GxsAbL._AC_SX569_.jpg" alt="Powerbank 3" style="width:75%; border-radius:0.5rem;">
-      <h3 style="margin:1rem 0 0.5rem;"> INIU Power Bank, 22,5 W 10 000 mAh </h3>
-      <p style="font-size:0.9rem;">Lättaste och liten men stark. Powerbank med Ficklampa och kompatibel med iPhone och Samsung.</p>
-      <a href="https://amzn.to/4hzN3b1" target="_blank" style="display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#f90; color:black; border-radius:0.5rem; text-decoration:none;">Köp på Amazon</a>
-    </div>
-
-  </div>
-</section>
-
-
 
     <footer>
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Länkar till din JavaScript-fil -->
+    <script src="script.js"></script>
 </body>
 </html>
