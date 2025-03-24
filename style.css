@@ -273,11 +273,6 @@ footer {
     }
 }
 
-/* Övriga Bildstilar */
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 .logo {
     max-width: 275px;
@@ -317,6 +312,8 @@ img {
         background-image: url('images/mobile-image.jpg');
     }
 }
-
-
+/* Dölj gammal text */
+.old-text {
+    display: none;
+}
 
