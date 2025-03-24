@@ -1,4 +1,3 @@
-/* Allmän stil */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,8 +5,6 @@ body {
     color: #FF5733;
     line-height: 1.6;
 }
-
-/* Header (om du har en klass med detta namn i HTML, annars kan denna tas bort) */
 .header {
     background-color: black;
 }
@@ -17,10 +14,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
-    padding: 15px 60px;
-    border-bottom: 2px solid #f39c12;
-    position: relative;
+    background-color: #111; /* Mörk bakgrund */
+    padding: 15px 60px; /* Ger bättre marginaler */
+    border-bottom: 2px solid #f39c12; /* Lyxig touch */
+    position: relative; /* För att positionera hamburgarmeny korrekt */
 }
 
 .navbar h1 {
@@ -33,11 +30,14 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    justify-content: center; /* Centrerar menyn */
+    align-items: center;
+    gap: 30px; /* Avstånd mellan alternativen */
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto; /* Gör så att menyn centreras i mitten */
 }
 
+/* Menyobjekt */
 .navbar ul li {
     display: inline-block;
 }
@@ -57,9 +57,9 @@ body {
     border-radius: 5px;
 }
 
-/* Hamburgarmeny (Mobil) */
+/* Hamburgarmeny */
 .menu-toggle {
-    display: none;
+    display: none; /* Dölj hamburgerikonen som standard */
     font-size: 30px;
     cursor: pointer;
     color: #f39c12;
@@ -79,9 +79,9 @@ body {
 }
 
 .hero button {
-    background-color: #f39c12;
-    color: black;
-    font-weight: bold;
+    background-color: #f39c12; /* Orange bakgrund */
+    color: black; /* Ändrar textfärgen till svart */
+    font-weight: bold; /* Gör texten fet */
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -91,25 +91,27 @@ body {
 }
 
 .hero button:hover {
-    background-color: #e67e22;
-    color: white;
+    background-color: #e67e22; /* Mörkare orange vid hover */
+    color: white; /* Ändrar texten till vit vid hover */
 }
 
 /* Om Oss-sektion */
 #about {
-    display: none;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centrerar allt innehåll i sektionen */
     padding: 50px 20px;
+    display: none; /* Döljer sektionen som standard */
 }
 
+/* Om Oss-text */
 .about-text {
-    color: #d3d3d3;
+    color: #d3d3d3;  /* Ljusgrå text för bättre kontrast */
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.6;  /* Ökar radavståndet */
     text-align: justify;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px;  /* Begränsar bredden för bättre läsbarhet */
+    margin: 0 auto;  /* Centrerar texten */
 }
 
 /* Visa "Om Oss" bara på index.html */
@@ -133,8 +135,8 @@ body#index-page #about {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatiskt antal kolumner */
+    gap: 20px; /* Avstånd mellan produkter */
     padding: 20px;
 }
 
@@ -147,8 +149,8 @@ body#index-page #about {
 }
 
 .product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px); /* Lyft effekt */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Skugga */
 }
 
 .product img {
@@ -191,20 +193,20 @@ footer {
 
 /* Kontaktsektion */
 #contact {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 80%; /* Ändra detta värde för att göra den bredare */
+    max-width: 900px; /* Öka maxbredden om du vill ha mer utrymme */
+    margin: 0 auto; /* Ser till att den hålls centrerad */
     padding: 50px 20px;
-    background-color: #222;
+    background-color: #222; /* Behåller den mörka bakgrunden */
     color: #FF5733;
-    border-radius: 10px;
+    border-radius: 10px; /* Ger rundade hörn, valfritt */
 }
 
 /* Instagram-knapp */
 .insta-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #E4405F;
+    background-color: #E4405F; /* Instagram-röd färg */
     color: white;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -215,7 +217,7 @@ footer {
 }
 
 .insta-btn:hover {
-    background-color: #c13584;
+    background-color: #c13584; /* Instagram-red */
     transform: scale(1.1);
 }
 
@@ -225,25 +227,97 @@ footer {
     margin-right: 10px;
 }
 
+/* NordVPN Sektion */
+.nordvpn-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.nordvpn-container h2 {
+    color: #00aaff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.nordvpn-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.vpn-features, .vpn-users {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.vpn-features h3, .vpn-users h3, .vpn-cta h3 {
+    color: #f39c12;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.vpn-features ul, .vpn-users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vpn-features li, .vpn-users li {
+    font-size: 1em;
+    background: #222;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.vpn-btn {
+    display: inline-block;
+    background: #0072ff;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.vpn-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.vpn-footer {
+    margin-top: 30px;
+    font-size: 1em;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
 /* Mobilanpassning */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: block; /* Visa hamburgerikonen på mobil */
     }
 
     .navbar ul {
-        display: none;
+        display: none; /* Dölj menyn som standard på mobil */
         flex-direction: column;
         width: 100%;
         background-color: #111;
         position: absolute;
-        top: 100%;
+        top: 100%; /* Placera menyn under navbaren */
         left: 0;
         padding: 10px 0;
     }
 
     .navbar ul.active {
-        display: flex;
+        display: flex; /* Visa menyn när den är aktiv */
     }
 
     .navbar ul li {
@@ -257,67 +331,116 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero {
-        height: 200px;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
+        grid-template-columns: 1fr; /* En kolumn på mobil */
     }
 }
-/* Övriga Bildstilar */
+
+/* Bildstilar */
 img {
     max-width: 100%;
     height: auto;
 }
-
+.old-text {
+    display: none;
+}
 .logo {
-    max-width: 275px;
+    max-width: 275px; /* Ändra storleken efter behov */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrerar loggan */
+}
+/* === POWERBANKS.SECTION === */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
-/* HERO-bakgrund specifik styling */
+.product-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f90;
+  color: black;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buy-button:hover {
+  background: #ffaa00;
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 90%;
+  }
+}
 .hero-background {
-    background-image: url('Images/chip2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    color: white;
+  background-image: url('../Images/chip2.jpg'); /* Justera sökväg vid behov */
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* mörk overlay */
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
+.hero-background h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-background p {
+  font-size: 1.1rem;
+}
+@media (max-width: 600px) {
+  .hero-background {
+    height: 200px;
+  }
+
+  .hero-background h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-background p {
+    font-size: 0.9rem;
+  }
+}
+/* Standardbakgrund för mobila enheter */
+.hero {
+    background-image: url('images/mobile-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bakgrund för enheter med en bredd på 768px eller mer (t.ex. surfplattor och datorer) */
 @media (min-width: 768px) {
     .hero {
         background-image: url('images/desktop-image.jpg');
     }
 }
-
-@media (max-width: 767px) {
-    .hero {
-        background-image: url('images/mobile-image.jpg');
-    }
-}
-/* Dölj gammal text */
-.old-text {
-    display: none;
-}
-
