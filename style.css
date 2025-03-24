@@ -432,3 +432,16 @@ img {
     font-size: 0.9rem;
   }
 }
+/* Standardbakgrund för mobila enheter */
+.hero {
+    background-image: url('images/mobile-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bakgrund för enheter med en bredd på 768px eller mer (t.ex. surfplattor och datorer) */
+@media (min-width: 768px) {
+    .hero {
+        background-image: url('images/desktop-image.jpg');
+    }
+}
