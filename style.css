@@ -403,11 +403,6 @@ img {
   text-align: center;
   color: white;
 }
-@media (min-width: 768px) {/bara för desktop
-    .hero-background {
-        background-image: url("../Images/chip2_desktop_optimized.jpg");
-    }
-}
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5); /* mörk overlay */
