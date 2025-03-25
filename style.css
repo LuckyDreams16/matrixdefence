@@ -403,6 +403,11 @@ img {
   text-align: center;
   color: white;
 }
+@media (min-width: 768px) {/bara för desktop
+    .hero-1 {
+        background-image: url("images/bild1_desktop.jpg");
+    }
+}
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5); /* mörk overlay */
