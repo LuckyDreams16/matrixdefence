@@ -365,11 +365,12 @@ img {
   text-align: center;
   color: white;
 }
-
 .product-card img {
-  width: 100%;
-  border-radius: 0.5rem;
+  max-width: 100px;
+  border-radius: 10px;
 }
+
+
 
 .buy-button {
   display: inline-block;
