@@ -433,7 +433,7 @@ img {
 }
 /* Standardbakgrund för mobila enheter */
 .hero {
-    background-image: url('images/mobile-image.jpg');
+    background-image: url('tigersköld.webp');
     background-size: cover;
     background-position: center;
 }
@@ -441,6 +441,6 @@ img {
 /* Bakgrund för enheter med en bredd på 768px eller mer (t.ex. surfplattor och datorer) */
 @media (min-width: 768px) {
     .hero {
-        background-image: url('images/desktop-image.jpg');
+        background-image: url('tigersköld.webp');
     }
 }
