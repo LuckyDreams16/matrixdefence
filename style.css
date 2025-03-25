@@ -405,7 +405,7 @@ img {
 }
 @media (min-width: 768px) {/bara för desktop
     .hero-1 {
-        background-image: url("images/bild1_desktop.jpg");
+        background-image: url("../Images/chip2_desktop_optimized.jpg");
     }
 }
 
