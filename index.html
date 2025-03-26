@@ -73,7 +73,20 @@ Att hålla sig uppdaterad är nyckeln till att överleva och frodas i framtiden.
     <footer>
         <p>&copy; 2025 MatrixDefence. Alla rättigheter förbehållna.</p>
     </footer>
+<script>
+  function toggleInfo() {
+    const info = document.getElementById("mer-info");
+    const button = document.getElementById("toggle-button");
 
+    if (info.style.display === "none") {
+      info.style.display = "block";
+      button.textContent = "Visa Mindre";
+    } else {
+      info.style.display = "none";
+      button.textContent = "Läs Mer";
+    }
+  }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
