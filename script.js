@@ -5,16 +5,4 @@ mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active'); // Lägg till eller ta bort klassen "active"
 });
  
-  function toggleInfo() {
-    const info = document.getElementById("mer-info");
-    const button = document.getElementById("toggle-button");
-
-    if (info.style.display === "none") {
-      info.style.display = "block";
-      button.textContent = "Visa Mindre";
-    } else {
-      info.style.display = "none";
-      button.textContent = "Läs Mer";
-    }
-  }
-
+ 
