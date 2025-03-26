@@ -366,8 +366,8 @@ img {
   color: white;
 }
 .product-card img {
-  max-width: 100px;
-  border-radius: 15px;
+  max-width: 120px;
+  border-radius: 10px;
 }
 
 .buy-button {
