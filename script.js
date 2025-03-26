@@ -4,7 +4,7 @@ const navLinks = document.getElementById('nav-links');
 mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active'); // Lägg till eller ta bort klassen "active"
 });
-<script>
+ 
   function toggleInfo() {
     const info = document.getElementById("mer-info");
     const button = document.getElementById("toggle-button");
@@ -17,4 +17,4 @@ mobileMenu.addEventListener('click', () => {
       button.textContent = "Läs Mer";
     }
   }
-</script>
+
