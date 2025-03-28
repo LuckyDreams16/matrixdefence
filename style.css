@@ -18,6 +18,7 @@ body {
     padding: 15px 60px; /* Ger bättre marginaler */
     border-bottom: 2px solid #f39c12; /* Lyxig touch */
     position: relative; /* För att positionera hamburgarmeny korrekt */
+    z-index: 10; / för att menyn ska hamna över bakground
 }
 
 .navbar h1 {
