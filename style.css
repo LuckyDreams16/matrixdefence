@@ -397,7 +397,7 @@ img {
   }
 }
 .hero-background {
-  background-image: url('../Images/chip2.jpg'); /* Justera sökväg vid behov */
+  background-image: url('../Images/chip4.png'); /* Justera sökväg vid behov */
   background-size: cover;
   background-position: center;
   height: 350px;
