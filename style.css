@@ -436,17 +436,3 @@ img {
     font-size: 0.9rem;
   }
 }
-@media (min-width: 768px) {
-  .hero-background {
-    background-image: url('../Images/chip2_desktop_optimized.jpg');
-    height: 400px; /* valfritt – anpassa om du vill ha högre bakgrund */
-  }
-
-  .hero-background h2 {
-    font-size: 2.5rem;
-  }
-
-  .hero-background p {
-    font-size: 1.2rem;
-  }
-}
