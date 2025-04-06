@@ -16,7 +16,7 @@ body {
     align-items: center;
     background-color: #111; /* Mörk bakgrund */
     padding: 15px 60px; /* Ger bättre marginaler */
-    border-bottom: 2px solid #00ffcc; /* Lyxig touch */
+    border-bottom: 2px solid #333; /* Lyxig touch */
     position: relative; /* För att positionera hamburgarmeny korrekt */
     z-index: 10; / för att menyn ska hamna över bakground
 }
