@@ -350,7 +350,7 @@ img {
     display: none;
 }
 .logo {
-    max-width: 275px; /* Ändra storleken efter behov */
+    max-width: 230px; /* Ändra storleken efter behov */
     height: auto;
     display: block;
     margin: 0 auto; /* Centrerar loggan */
