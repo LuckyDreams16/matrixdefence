@@ -7,6 +7,12 @@ display: flex;
   border: 1px solid #00ffcc33;
   border-radius: 10px;
 }
+.product-card {
+  height: auto;
+  overflow: hidden;          /* så inget sticker ut */
+  box-sizing: border-box;    /* säkrare padding/bredd */
+}
+
 
 .product-image img {
   max-width: 320px;
