@@ -1,16 +1,29 @@
+/* ===== Bug Out Bag – eget kort ===== */
+
 .bugout-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-  margin: 2rem 0;
+  flex-direction: column;   /* allt under varandra */
+  align-items: center;      /* centrera innehåll */
+  width: 100%;              /* fyll rad */
+  max-width: 420px;         /* men inte bredare än så */
+  margin: 2rem auto;        /* centrera på sidan */
+  padding: 2rem 1.8rem;
   background: #111;
   border: 1px solid #00ffcc33;
-  border-radius: 10px;
-  height: auto;
-  overflow: hidden;          /* så inget sticker ut */
-  box-sizing: border-box;    /* säkrare padding/bredd */
+  border-radius: 18px;
+  box-sizing: border-box;
 }
+
+/* gör texten lite tightare så inget trycks ut */
+.bugout-card p,
+.bugout-card li {
+  margin-bottom: 0.4rem;
+}
+
+.bugout-card p:last-child {
+  margin-bottom: 0;
+}
+
 
 .product-image img {
   max-width: 320px;
