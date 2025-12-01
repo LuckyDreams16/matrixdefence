@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – MatrixDefence</title>
+
+  <!-- Google Fonts (samma som övriga sidan) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Din globala CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Extra checkout-styling, kan flyttas till style.css om du vill */
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      margin: 0;
+      background-color: #050505;
+      color: #f1f1f1;
+    }
+
+    .checkout-wrapper {
+      max-width: 1100px;
+      margin: 6rem auto 3rem;
+      padding: 1.5rem;
+    }
+
+    .checkout-heading {
+      font-family: 'Orbitron', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #00ffcc;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .checkout-subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    .checkout-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.5fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .checkout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .order-summary,
+    .checkout-form {
+      background: radial-gradient(circle at top, #101010 0, #050505 60%);
+      border: 1px solid #00ffcc33;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .order-summary h2,
+    .checkout-form h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #00ffcc;
+    }
+
+    .order-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    .order-label {
+      color: #aaa;
+    }
+
+    .order-value {
+      font-weight: 600;
+    }
+
+    .order-total {
+      border-top: 1px solid #333;
+      margin-top: 1rem;
+      padding-top: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      color: #00ff88;
+    }
+
+    .order-note {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    .checkout-form form {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .form-row > div {
+      flex: 1;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      color: #ddd;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #070707;
+      color: #f1f1f1;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+      color: #666;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background: #00ffcc;
+      color: #000;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: #00d5aa;
+      transform: translateY(-1px);
+      box-shadow: 0 0 14px rgba(0, 255, 204, 0.4);
+    }
+
+    .small-text {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.3rem;
+    }
+
+    .checkout-footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: #111;
+      border: 1px solid #00ffcc55;
+      color: #00ffcc;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="checkout-wrapper">
+    <h1 class="checkout-heading">Checkout – MatrixDefence</h1>
+    <p class="checkout-subtitle">
+      Slutför din beställning nedan. Vi återkommer med orderbekräftelse och betalningsinstruktioner.
+    </p>
+
+    <div class="checkout-grid">
+
+      <!-- ORDERÖVERSIKT -->
+      <aside class="order-summary">
+        <h2>Din order</h2>
+
+        <div class="order-line">
+          <span class="order-label">Produkt:</span>
+          <span class="order-value" id="summary-product-name">Okänd produkt</span>
+        </div>
+
+        <div class="order-line">
+          <span class="order-label">Pris:</span>
+          <span class="order-value" id="summary-product-price">–</span>
+        </div>
+
+        <div class="order-line">
+          <span class="order-label">Antal:</span>
+          <span class="order-value" id="summary-qty">1</span>
+        </div>
+
+        <div class="order-total">
+          <span>Beräknat totalpris</span>
+          <span id="summary-total">–</span>
+        </div>
+
+        <p class="order-note">
+          <strong>Obs:</strong> Frakt, moms och ev. avgifter kan justeras i den slutliga orderbekräftelsen beroende på leveransadress
+          och fraktval. Du betalar ingenting förrän du godkänner ordern.
+        </p>
+      </aside>
+
+      <!-- CHECKOUT-FORMULÄR -->
+      <section class="checkout-form">
+        <h2>Kund- & leveransuppgifter</h2>
+
+        <!--
+          VIKTIGT:
+          Byt ut ACTION nedan till din Formspree-URL eller annan endpoint
+          t.ex. action="https://formspree.io/f/xxxxxxxx"
+        -->
+        <form action="https://formspree.io/f/DITT-ID-HÄR" method="POST">
+          <!-- Produktfält (fylls via JS) -->
+          <input type="hidden" id="product-input" name="produkt" value="Okänd produkt" />
+          <input type="hidden" id="price-input" name="pris" value="" />
+          <input type="hidden" id="qty-input" name="antal" value="1" />
+
+          <div class="form-row">
+            <div>
+              <label for="namn">Namn</label>
+              <input type="text" id="namn" name="namn" required placeholder="För- och efternamn" />
+            </div>
+            <div>
+              <label for="telefon">Telefon</label>
+              <input type="text" id="telefon" name="telefon" required placeholder="+46..." />
+            </div>
+          </div>
+
+          <label for="email">E-post</label>
+          <input type="email" id="email" name="email" required placeholder="din@mail.se" />
+
+          <label for="adress">Adress</label>
+          <input type="text" id="adress" name="adress" required placeholder="Gatuadress, lägenhet etc." />
+
+          <div class="form-row">
+            <div>
+              <label for="postnummer">Postnummer</label>
+              <input type="text" id="postnummer" name="postnummer" required placeholder="Ex. 443 00" />
+            </div>
+            <div>
+              <label for="ort">Ort</label>
+              <input type="text" id="ort" name="ort" required placeholder="Stad/ort" />
+            </div>
+          </div>
+
+          <label for="land">Land</label>
+          <input type="text" id="land" name="land" required value="Sverige" />
+
+          <label for="meddelande">Meddelande (valfritt)</label>
+          <textarea id="meddelande" name="meddelande" placeholder="Ex. önskad färgvariant, portkod, särskilda önskemål..."></textarea>
+
+          <button type="submit" class="btn-primary">
+            Skicka beställning
+          </button>
+          <p class="small-text">
+            Genom att skicka beställningen godkänner du att MatrixDefence kontaktar dig via e-post/telefon
+            med orderbekräftelse, fraktinformation och betalningslänk.
+          </p>
+        </form>
+      </section>
+    </div>
+
+    <p class="checkout-footer-note">
+      MatrixDefence <span class="badge">Secure & Survival Ready</span>
+    </p>
+  </div>
+
+  <!-- LITEN JS SOM LÄSER ?product=&price=&qty= FRÅN URL:EN -->
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+
+      const product = params.get("product") || "Okänd produkt";
+      const price = params.get("price"); // bara siffror, ex: 799
+      const qty = parseInt(params.get("qty") || "1", 10);
+
+      const productNameEl = document.getElementById("summary-product-name");
+      const productPriceEl = document.getElementById("summary-product-price");
+      const qtyEl = document.getElementById("summary-qty");
+      const totalEl = document.getElementById("summary-total");
+
+      const productInput = document.getElementById("product-input");
+      const priceInput = document.getElementById("price-input");
+      const qtyInput = document.getElementById("qty-input");
+
+      productNameEl.textContent = product;
+      productInput.value = product;
+
+      qtyEl.textContent = qty;
+      qtyInput.value = qty;
+
+      if (price && !isNaN(price)) {
+        const priceNumber = Number(price);
+        const total = priceNumber * qty;
+
+        productPriceEl.textContent = priceNumber.toString() + " kr";
+        totalEl.textContent = total.toString() + " kr";
+
+        priceInput.value = priceNumber.toString();
+      } else {
+        productPriceEl.textContent = "Enligt överenskommelse";
+        totalEl.textContent = "–";
+      }
+    })();
+  </script>
+</body>
+</html>
