@@ -294,6 +294,41 @@
             med orderbekräftelse, fraktinformation och betalningslänk.
           </p>
         </form>
+        <div id="thankyou-message" style="
+  display:none;
+  background:#111;
+  color:#00ffcc;
+  padding:20px;
+  margin-top:20px;
+  border:1px solid #00ffcc;
+  border-radius:8px;
+  font-family: 'Orbitron', sans-serif;
+">
+  <h2>Tack! Din order är mottagen.</h2>
+  <p>MatrixDefence har tagit emot din beställning och återkommer inom kort.</p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    }).then(response => {
+      if (response.ok) {
+        document.getElementById("thankyou-message").style.display = "block";
+        form.reset();
+      }
+    });
+  });
+});
+</script>
+
       </section>
     </div>
 
