@@ -507,6 +507,7 @@ header.navbar h1 {
 .video-banner video {
   width: 80%;
   height: 80%;
+  margin: 0 auto;
   display: block;
   border-radius: 0;
 }
