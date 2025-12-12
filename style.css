@@ -504,3 +504,9 @@ header.navbar h1 {
     margin: 0;
     color: #f5c400; /* gul titel */
 }
+.video-banner video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
