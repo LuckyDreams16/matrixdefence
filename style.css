@@ -512,3 +512,38 @@ header.navbar h1 {
   border-radius: 0;
 }
 
+.matrix-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  border-top: 1px solid #00ffcc33;
+  border-bottom: 1px solid #00ffcc33;
+}
+
+.ticker-track {
+  white-space: nowrap;
+  display: inline-block;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.matrix-ticker span {
+  display: inline-block;
+  padding: 12px 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.25em;
+  color: #00ffcc;
+  text-shadow:
+    0 0 6px rgba(0, 255, 204, 0.6),
+    0 0 12px rgba(0, 255, 204, 0.3);
+}
+
+/* Animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
